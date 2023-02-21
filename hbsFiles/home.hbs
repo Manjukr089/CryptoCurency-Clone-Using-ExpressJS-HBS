@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express</title>
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+    {{>navbar}}
+    <div class="coins">
+                    {{#each coins}}
+            <div class="coinsInfo">
+                <div class="images">
+                    <img src= {{this.iconUrl}} alt="">
+                </div>
+                <div class="symbol">
+                    <h3>UUID :{{this.uuid}}</h3>
+                    <h3>Symbol :{{this.symbol}}</h3>
+                </div>
+                <div class="name">
+                    <h2>Name :{{this.name}}</h2>
+                </div>
+
+                <div class="rank">
+                    <h3>Tier :{{this.tier}}</h3>
+                    <h3>Rank :{{this.rank}}</h3>
+                </div>
+                <div class="price">
+                    <h3 style="color: red;">Price :
+                        <span>
+                            {{!-- {{Math.trunc(this.price)}}</h3> --}}
+                        </span>
+                </div>
+            </div>
+                {{/each}}
+    </div>
+
+
+    <div class="stats">
+        {{#each stats}}
+         <h1 >Total : <br>
+             <span >   {{this.total}}</h1> </span>
+            <h1>TotalCoins : <br>
+                <span>{{this.totalCoins}}</h1></span>
+                <h1>TotalMarkets : <br>
+                    <span>{{this.totalMarkets}}</h1></span>
+            <h1>TotalExchanges : <br>
+                <span>{{this.totalExchanges}}</h1></span>
+                {{/each}}
+    </div>
+</body>
+</html>

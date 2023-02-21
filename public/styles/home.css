@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    /* margin-left: 30px; */
+    margin-top: -20px;
+    align-items: center;
+    padding: 0px 30px;
+    /* width: 100%; */
+    background-color:gainsboro;
+}
+.content li, a{
+    font-weight: bold;
+    display:inline-block;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.content a:hover{
+    background-color: grey;
+}
+
+.SignIn{
+    margin-left: 380px;
+}
+.SignIn button{
+    border-radius: 5px;
+    margin-left: 30px;
+    padding: 5px;
+    /* padding-left: 100px; */
+}
+#b1{
+    /* color: ;
+    background-color: red; */
+}
+#b2{
+    color: white;
+    background-color: red;
+}
+#b3{
+    color: white;
+    background-color: black;
+}
+
+/*! home */
+.coins{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.coinsInfo{
+    /* height: 400px;
+    width: 400px; */
+    margin: 10px;
+    padding: 10px;
+    background-color: gainsboro     ;
+    box-shadow: 2px 0px 10px 2px;
+}
+.coinsInfo img{
+    width: 450px;
+    height: 180px;
+}
+.symbol{
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+}
+.rank{
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+.price{
+    margin-top: -20px;
+    color: red;
+}
+.price span{
+    color: black;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    background-color: yellow;
+}
+.stats h1{
+    color:blue;
+}
+.stats span{
+    color: red;
+}
